@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="Images/plane.png">
+   <title>Bootstrap2</title>
+
+   <link href="cssBootstrap/bootstrap.min.css" rel="stylesheet">
+     
+   <style type="text/css">
+   
+       body{
+           position:relative;       <!--Scroll_spy_function -->
+        }
+       
+       body *>p{
+           text-align:justify;
+       }
+       
+       #icon{
+           margin: 15px 10px;
+           font-size: 20px;
+       }
+       
+       .jumbotron{
+           background-image: url("Images/atlnt.jpg");
+           background-size:cover;
+           height:350px;
+       }
+       
+       #override{
+           background-color:#EBF8FF;
+       }
+    
+   
+        div.polaroid {
+        width: 83%;
+        background-color: white;
+        box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.7);
+        margin: 25px 25px 25px 25px;
+        padding: 10px 10px 10px 10px;
+        border-radius:5px;
+        }
+       
+       .other-place{
+           float:left;
+           position:relative;
+           margin:10px 10px;
+       }
+       
+       #this1{
+           top:1px;
+           left:100px;
+           font-size:30px;
+           position:absolute;
+           font-family:fantasy;
+           color:black;
+           display:none;
+       }
+       
+       #this2{
+           bottom:1px;
+           left:120px;
+           font-size:30px;
+           position:absolute;
+           font-family:fantasy;
+           color:#fff;
+           display:none;
+       }
+       
+       #this3{
+           bottom:80px;
+           left:60px;
+           font-size:30px;
+           position:absolute;
+           font-family:fantasy;
+           color:black;
+           display:none;
+       }
+       
+       #clear{
+           clear:left;
+        }
+       
+       .home-icon {
+           margin-top:15px;
+       }
+    </style>
+
+ </head>
+    
+ <body id="override">
+  
+  <nav class="navbar navbar-default">
+   <div class="container-fluid">
+     <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">       
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+         
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" float="right">
+           <ul class="nav navbar-nav">
+            <li><img class="home-icon" src="Images/home.png"></li>
+            <li><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Places To Visit<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li><a href="#coca-cola">World Of Coca-Cola</a></li>
+              <li><a href="#georgia">Georgia Aquarium</a></li>
+              <li><a href="#olympic">Centennial Olympic Park</a></li>
+              </ul>
+             </li>
+           </ul>
+          </div>    
+       </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+       
+    <div class="jumbotron">
+        <h1>ATLANTA</h1>
+    <p></p>
+    </div>
+        
+     <h3 id="home">Home</h3>
+        <p><strong>ATLANTA</strong>: Fine dining, shopping and rich history combined with inspiration-inducing attractions to create a city with Southern charm and world-class sophistication. It is easy to see why Atlanta, Georgia is one of the most popular destinations in the Southeast to live and to visit</p>
+        
+     <h3 id="about">About</h3>
+        <p><strong>MentalFloss Info</strong></p>
+            <ul>
+                <li>Atlanta was originally named Terminus and Marthasville (the latter for Governor Wilson Lumpkin's daughter).</li>
+
+                <li>The city got its current name from railroad engineer J. Edgar Thompson. It is thought to be a shortened version of 'Atlantica-Pacifica.'</li>
+
+                <li>Your GPS might be confused if you punch in 'Peachtree' as your destination. There are over 55 streets with the name.</li>
+
+                <li>And it's possible none of them are named for an actual peach tree. Historians suggest they're named after the Native American village of 'Standing Pich tree' The pronunciation corrupted over the years.</li>
+
+                <li>Atlanta was the only city in North American destroyed as an act of war. (General Sherman burnt it to the ground.)</li>
+
+                <li>Only 400 buildings survived.</li>
+
+                <li>That's why the city's symbol is a phoenix.</li>
+
+                <li>Lots of airports claim to be the world's busiest. But Hartsfield-Jackson Atlanta International Airport truly is the world's busiest airport.</li>
+            </ul>
+        
+     
+     <h3 id="georgia">Georgia Aquarium</h3>
+     <p>The Georgia Aquarium and Wolfgang Puck Catering are creating waves of excitement as the most unique and engaging event venue in Atlanta. Located in the heart of downtown, across from Centennial Olympic Park, the Georgia Aquarium is easily accessible from the interstate and within walking distance from the Georgia World Congress Center and most hotels in the area.
+     Bring your next corporate meeting, special event or wedding in Atlanta to the the world's most magical and most engaging aquarium. We can accommodate groups of 50 up to 1,200 people with our flexible 23,000 square feet of meeting space, including our Oceans Ballroom. You may also enjoy every part of the most unique Atlanta attraction by renting the entire aquarium for a private experience to accommodate up to 5,000 people</p>
+
+    <div class="row polaroid">
+    
+       <div class="col col-lg-4">
+        <img src="Images/dolphin.jpg" alt="Dolphin" height="250px" width="330px" >
+        <figcaption>The Dolphin Show</figcaption>
+        </div>
+        <div class="col col-lg-4">
+        <img src="Images/atlnt1.jpg" alt="Whale" height="250px" width="330px" >
+        <figcaption>The Big Whale</figcaption>
+        </div> 
+        <div class="col col-lg-4">
+        <img src="Images/sealion.jpg" alt="Sea-Lion" height="250px" width="330px" >
+        <figcaption>The Sea Lion</figcaption>
+        </div>
+     </div>
+      <h3 id="coca-cola">World of Coca-Cola</h3>
+     <p>From the original World of Coca-Cola that opened on August 3, 1990 at Underground Atlanta, to the opening of the World of Coca_Cola at Pemberton Place on May 24, 2007, we are proud to have welcomed over 23 million guests in the past 25 years. Join us in celebrating 25 years of sharing happiness. Join Coca-Cola in a celebration of life's moment of Happiness. Memorable moments experienced by people of different ages and cultures around the world. Journey through milestone life experiences such as skydiving for the first time and surprising a loved one on a special occasion, and celebrate shared moments of happiness both large and small. The entire Moments of Happiness film can only be seen at the World of Coca-Cola in Atlanta, but you can get a glimpse of the film by watching the film trailer in the video gallery. Come visit us to view the entire film and celebrate life. We then invite you to share your very own World of Coca-Cola Moments with us by using World of Coca Cola.</p>
+
+    <div class="row polaroid">
+       <div class="col col-sm-4">
+        <img src="Images/coca1.jpg" alt="Tasting Room" border-radius="5px" height="250px" width="330px" >
+        <figcaption>The Tasting Room</figcaption>
+        </div>
+        <div class="col col-sm-4">
+        <img src="Images/coca2.jpg" alt="Fun Center" border-radius="5px" height="250px" width="330px" >
+        <figcaption>The Fun Center</figcaption>
+        </div>
+        <div class="col col-sm-4">
+        <img src="Images/coca3.jpg" alt="Conveyor" border-radius="5px" height="250px" width="330px" >
+        <figcaption>The System</figcaption>
+        </div>
+     </div>
+     
+    <h3 id="olympic">Centennial Olympic Park</h3>
+     <p>Centennial Olympic Park is a 21-acre (85,000 m2) public park located in downtown Atlanta, Georgia owned and operated by the Georgia World Congress Center Authority. It was built by the Atlanta Committee for the Olympic Games (ACOG) as part of the infrastructure improvements for the Centennial 1996 Summer Olympics. It plays host to millions of visitors a year and several events, including a summer popular music concert series (Wednesday WindDown) and an annual Independence Day concert and fireworks display.</p>
+
+    <div class="row polaroid">
+       <div class="col col-lg-4">
+        <img src="Images/olympic1.jpg" alt="Park view 1" border-radius="5px" height="250px" width="330px">
+        <figcaption>View from South</figcaption>
+        </div>
+        <div class="col col-lg-4">
+        <img src="Images/olympic2.jpg" alt="Park view 2" border-radius="5px" height="250px" width="330px">
+        <figcaption>The fountains</figcaption>
+        </div>
+        <div class="col col-lg-4">
+        <img src="Images/olympic3.jpg" alt="Park view 3" border-radius="5px" height="250px" width="330px">
+        <figcaption>Amazing Night Lights</figcaption>
+        </div>
+     </div>
+        
+     <hr>
+     <p></p>
+        
+     <h3>Other Places to Visit</h3>
+         <div class="well">Hover over the images to know their names</div>
+        <div class="other-place">
+         <img src="Images/stn.jpg" alt="Stone Mountain Park" width="400" height="300" id="stone">
+         <div id="this1">Stone Mountain Park</div>
+        </div>
+        <div class="other-place">
+         <img src="Images/botanical.jpg" alt="Botanical Garden" width="400" height="300" id="park">
+         <div class="center-text" id="this2">Botanical Park</div>
+        </div>
+         <div class="other-place">
+         <img src="Images/high.jpg" alt="Botanical Garden" width="400" height="300" id="muse">
+         <div class="center-text" id="this3">High Museum of Art</div>
+        </div>
+        
+     <script type="text/javascript"> 
+            document.getElementById("stone").onmouseover=function(){
+             document.getElementById("this1").style.display='block';
+            }
+            document.getElementById("park").onmouseover=function(){
+             document.getElementById("this2").style.display='block';
+            }
+             document.getElementById("muse").onmouseover=function(){
+             document.getElementById("this3").style.display='block';
+            }
+            
+     </script>
+        
+        
+        <div id="clear"></div>
+        <p></p>
+        <p></p>
+        <footer>So, Enjoy your trip and thank the creator :D</footer>
+        
+         <script src="jquery.min.js"></script>
+    
+         <script src="jsBootstrap/bootstrap.min.js"></script>
+        
+     </div>
+   </body>
+</html>
